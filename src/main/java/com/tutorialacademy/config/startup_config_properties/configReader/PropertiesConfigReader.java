@@ -58,8 +58,6 @@ public class PropertiesConfigReader implements ConfigReader {
     	try {
     		output = new FileOutputStream( filePath );
 
-    		// set the properties key-value pair
-    		properties.setProperty( key, value );
     		// save properties to given path
     		properties.store( output, null );
 
